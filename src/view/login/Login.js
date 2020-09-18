@@ -41,9 +41,8 @@ export class Login extends Component {
   login = () => {
     const { credentials } = this.props;
     this.props.login(credentials).then(() => {
-      debugger
       if (this.props.success) {
-        window.location.replace("https://mateushr23.github.io/");
+        window.location.replace("/dashboard");
       }
     });
   };

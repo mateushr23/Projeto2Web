@@ -1,0 +1,364 @@
+body{
+    margin: 0;
+  }
+  
+  .cabeçalho{
+      position: fixed;
+      height: 61px;
+      width: 100%;
+      box-shadow: 0px 0px 16px 0px black;
+      background-color: #3c2525;
+      z-index: 1;
+  }
+  
+  .green{
+      position: relative;
+      top: 60px;
+  }
+  
+  .green img{
+      width: 100%;
+      height: 680px;
+  }
+  
+  .choco{
+      position: relative;  
+      top: 56px; 
+      background-color: #3c2525;
+      margin: 0;
+  }
+  
+  .choco img{
+    width: 100%;
+    height: 193px;
+  }
+  
+  /*-------------------------EM COMUM----------------------*/
+  
+  /*botão*/
+  .dropbtn {
+      background-color: #3c2525;
+      color: white;
+      padding: 23px;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Gotham Book',sans-serif;
+      position: relative;
+      margin: 5px;       
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    left: 550px;
+    bottom: 5px; 
+  }
+  
+  /*mouse em cima do botão*/
+  .dropdown:hover .dropbtn {
+    color: rgb(175, 170, 170);
+    transition: 0.4s ease;
+  }
+  
+  /*botão*/
+  .dropbtn-semmenu {
+    background-color: #3c2525;
+    color: white;
+    padding: 20px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Gotham Book',sans-serif;
+    position: relative;
+    margin: 5px; 
+    bottom: 5px;  
+  }
+  
+  .dropdown-semmenu {
+  position: relative;
+  display: inline-block;
+  left:550px;
+  }
+  
+  /*mouse em cima do botão*/
+  .dropdown-semmenu:hover .dropbtn-semmenu {
+  color: rgb(175, 170, 170);
+  transition: 0.4s ease;
+  }
+  
+  /*-----------------------BOTÃO MARROM--------------------*/
+  
+  /*oq aparece embaixo do botão*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c2525;
+    min-width: 120px;
+    z-index: 1;
+    font-size: 13px;
+    left: 15px;
+    top: 98px;
+  }
+  
+  /*texto de baixo do botão*/
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    padding: 9px;
+    font-family: 'Gotham Book',sans-serif;
+  }
+  
+  /*mouse em cima do texto*/
+  .dropdown-content a:hover {
+    color: rgb(175, 170, 170);
+    transition: 0.4s ease;
+  }
+  
+  /*mouse em cima do botão ele mostra o menu*/
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /*-----------------------BOTÃO LARANJA--------------------*/
+  
+  .dropdown-content-laranja {
+    display: none;
+    position: absolute;
+    background-color: #f2902e;
+    min-width: 120px;
+    z-index: 1;
+    font-size: 13px;
+    left: 15px;
+    top: 65px; 
+  }
+  
+  .dropdown-content-laranja a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    padding: 9px;
+    font-family: 'Gotham Book',sans-serif;
+  }
+  
+  .dropdown-content-laranja a:hover {
+    color: rgb(175, 170, 170);
+    transition: 0.4s ease;
+  }
+  
+  .dropdown:hover .dropdown-content-laranja {
+    display: block;
+  }
+  
+  /*-----------------------BOTÃO ROSA--------------------*/
+  
+  /*botão*/
+  .dropbtn-rosa {
+    background-color: #ff1493;
+    color: white;
+    padding: 8px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Gotham Book',sans-serif;
+    position: relative;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    margin: 5px; 
+  }
+  
+  .dropdown-rosa {
+  position: relative;
+  display: inline-block;
+  left: 550px;
+  bottom: 5px;
+  }
+  
+  /*mouse em cima do botão*/
+  .dropdown-rosa:hover .dropbtn-rosa {
+  color: rgb(175, 170, 170);
+  transition: 0.4s ease;
+  }
+  
+  .dropbtn-busca {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 80px 8px 8px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Gotham Book',sans-serif;
+    position: relative;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    margin: 5px;  
+  }
+  
+  .dropdown-busca {
+    position: relative;
+    display: inline-block;
+    left: 550px;
+    bottom: 5px;
+   }
+  
+  /*-----------------------------------------------------------*/
+  
+  .contato img{
+    position: relative;
+    left: 1700px;
+    bottom: 125px;
+  }
+  
+  .cacaubr img{
+    position: relative;
+    left: 450px;
+    bottom: 70px;
+    height: 111px;
+    width: 111px;
+    box-shadow: 1px 1px 4px black; 
+  }
+  
+  .insta-icon{
+    position: relative;
+    bottom: 295px;
+    left: 1350px;  
+  }
+  
+  .insta-icon img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .fb-icon{
+    position: relative;
+    bottom: 324px;
+    left: 1385px;
+  }
+  .fb-icon img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  .yt-icon{
+    position: relative;
+    bottom: 347px;
+    left: 1419px; 
+  }
+  
+  .yt-icon img{
+    height: 20px;
+    width: 27px;
+    cursor: pointer;
+  }
+  
+  .share-icon{
+    position: relative;
+    bottom: 370px;
+    left: 1455px; 
+  }
+  
+  .share-icon img{
+    height: 20px;
+    width: 27px;
+    cursor: pointer;
+  }
+  
+  /*-----------------------media-query-------------------------*/
+  
+  @media screen and (min-width:1px) and (max-width: 768px)  {
+  
+    .green{
+      display: none;
+    } 
+  
+    .greenmobile img{
+      position: relative;
+      top: 60px;
+      width: 100%;  
+    }
+  
+    .choco img{
+      position: relative;
+      width: 100%;
+      height: 100px;
+    }
+  
+    .cacaubr{
+      display: none;
+    }
+  
+    .cacaumobile img{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left:-50px;
+      margin-top:-40px;
+      height: 70px;
+      cursor: pointer;
+    }
+  
+    .dropdown-semmenu{
+      display: none;
+    }
+  
+    .dropdown{
+      display: none;
+    }
+  
+    .dropdown-rosa{
+      display: none;
+    }
+  
+    .menumobile img{
+      position: relative;
+      bottom: 35px;
+      left: 5px;
+      cursor: pointer;
+    }
+  
+    .contato{
+      display: none;
+    }
+  
+    .insta-icon{
+      display: none;
+    }
+  
+    .fb-icon{
+      display: none;
+    }
+    
+    .yt-icon{
+      display: none;
+    }
+  
+    .share-icon{
+      display: none;
+    }
+
+
+  }
+  
+  @media screen and (min-width:768px) and (max-width: 1920px)  {
+  
+    .menumobile{
+      display: none;
+    }
+  
+    .greenmobile{
+      display: none;
+    } 
+  
+    .cacaumobile{
+      display: none;
+    }
+  }

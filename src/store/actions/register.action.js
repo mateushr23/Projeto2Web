@@ -34,7 +34,8 @@ export const registerUser = (data) => {
     );
     return Http.post("/api/register", data)
       .then((res) => {
-        if (res.status === 200) {
+        if(res.status === 200) {
+          
           dispatch(
             changeNotify({
               open: true,
@@ -42,7 +43,7 @@ export const registerUser = (data) => {
               msg: "Usuário cadastrado com sucesso.",
             })
           );
-          dispatch(setUserToken(res.data.token));
+          setUserToken(res.data.token);
           dispatch(success(true));
         } else {
 

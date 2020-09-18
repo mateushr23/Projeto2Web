@@ -43,14 +43,6 @@ export const loading = (bool, msg = null) => ({
   },
 });
 
-export const getUserToken = () => (dispatch) =>
-  localStorage.getItem("access_token").then((res) => {
-    dispatch(loading(false));
-    if (typeof res !== "undefined") {
-      dispatch(getToken(res));
-    }
-  });
-
 export const setUserToken = (token) => (dispatch) => {
   localStorage.setItem("access_token", token);
   dispatch(loading(false));
@@ -77,7 +69,7 @@ export const login = (credentials) => {
           })
         );
         if (typeof res !== "undefined") {
-          dispatch(setUserToken(res.data.access_token));
+          dispatch(setUserToken(res.data.token));
         }
       })
       .catch((error) => {

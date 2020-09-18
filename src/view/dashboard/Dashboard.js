@@ -1,42 +1,35 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Container } from "@material-ui/core";
+import { getItems } from "../../store/actions/busca.actions";
+import Header from "./Header";
+import Home from "./Home";
 
 export class Dashboard extends Component {
-  render() {
-    const { token } = this.props;
+  getItems = () => {};
 
-    if(!token) {
-        window.location.replace("/");
+  render() {
+    let token = localStorage.getItem("access_token");
+    if (!token) {
+      window.location.replace("/");
     }
 
-    return token && (
-      <div>
-        <Container component="main" maxWidth="xs">
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-
-        ALKSDLÇKASÇLDKLAÇKSÇLKDLAKSDALSÇKD
-        </Container>
-      </div>
+    return (
+      token && (
+        <div>
+          <Header />
+          <Home />
+        </div>
+      )
     );
   }
 }
 
 const mapStateToProps = (state) => ({
-  // credentials: state.authReducer.credentials,
-  // success: state.authReducer.success,
+  items: state.items,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  // login: (credentials) => dispatch(login(credentials)),
-  // changeValue: (value) => dispatch(changeValue(value)),
+  item: (texto) => dispatch(getItems(texto)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

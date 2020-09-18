@@ -18,11 +18,11 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <Routes />
-      </ThemeProvider>
-    </Provider>
+     <Provider store={store}>
+       <ThemeProvider theme={theme}>
+         <Routes />
+       </ThemeProvider>
+     </Provider>
   );
 }
 
