@@ -54,7 +54,7 @@ export class Register extends Component {
         <Container component="main" maxWidth="xs">
           <div className="mt-3 mt-md-5">
             <div className="text-center">
-              <WhiteTextTypography variant="h2" color="">
+              <WhiteTextTypography variant="h2" color="white">
                 Crie a sua conta
               </WhiteTextTypography>
             </div>

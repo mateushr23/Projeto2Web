@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-export const rootUrl = "http://www.recipepuppy.com";
+export const rootUrl = "https://www.balldontlie.io/";
 
 export const Http = Axios.create({
   baseURL: rootUrl,

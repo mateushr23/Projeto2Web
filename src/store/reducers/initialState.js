@@ -18,6 +18,14 @@ export default {
     success: false,
   },
 
+  busca: {
+    data: {
+      text: "",
+    },
+    error: {},
+    success: false,
+  },
+
   loading: {
     open: false,
     msg: "",
