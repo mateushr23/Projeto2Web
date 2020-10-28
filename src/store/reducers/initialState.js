@@ -36,7 +36,7 @@ export default {
     class: "success",
     vertical: "top",
     horizontal: "center",
-    time: 3000,
+    time: 100000,
     msg: "",
   },
 };

@@ -30,23 +30,23 @@ export const registerUser = (data) => {
       changeloading({
         open: true,
         msg: "Registrando Usuário",
+        time: 100000,
       })
     );
     return Http.post("/api/register", data)
       .then((res) => {
-        if(res.status === 200) {
-          
+        if (res.status === 200) {
           dispatch(
             changeNotify({
               open: true,
               class: "success",
               msg: "Usuário cadastrado com sucesso.",
+              time: 100000,
             })
           );
           setUserToken(res.data.token);
           dispatch(success(true));
         } else {
-
         }
         dispatch(
           changeloading({
@@ -55,12 +55,14 @@ export const registerUser = (data) => {
         );
       })
       .catch(() => {
-          dispatch(
-            changeNotify({
-              open: true,
-              class: "error",
-              msg: "Erro ao registrar!",
-            }))
+        dispatch(
+          changeNotify({
+            open: true,
+            class: "error",
+            msg: "Erro ao registrar!",
+            time: 100000,
+          })
+        );
         dispatch(
           changeloading({
             open: false,

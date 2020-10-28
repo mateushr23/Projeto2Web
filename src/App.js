@@ -2,11 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-
-
 import Routes from "./routes";
-
-import "./css/dashboard.css";
 
 const theme = createMuiTheme({
   pallete: {

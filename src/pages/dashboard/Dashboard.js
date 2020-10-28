@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getItems } from "../../store/actions/busca.actions";
-import Header from "./Header";
-import Home from "./Home";
+import { Link } from "react-router-dom";
 
 export class Dashboard extends Component {
   getItems = () => {};
@@ -15,9 +14,17 @@ export class Dashboard extends Component {
 
     return (
       token && (
-        <div>
-          <Header />
-          <Home />
+        <div className="Dashboard">
+          <div className="Header">
+            <button className="botao-marrom">QUEM SOMOS</button>
+            <button className="botao-marrom">PRODUTOS</button>
+            <button className="botao-marrom">CONTATO</button>
+            <button className="botao-marrom">LOJAS</button>
+            <button className="botao-rosa">SEJA FRANQUEADO</button>
+            <Link to="/adm" className="botao-amarelo">
+              ADMINISTRAÇÂO
+            </Link>
+          </div>
         </div>
       )
     );
