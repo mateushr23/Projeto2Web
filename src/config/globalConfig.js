@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-export const rootUrl = "https://reqres.in";
+export const rootUrl = process.env.REACT_APP_API_URL;
 
 export const Http = Axios.create({
   baseURL: rootUrl,
